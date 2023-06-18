@@ -33,4 +33,12 @@ return function(use)
       dotfiles = true,
     },
   })
+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  vim.opt.termguicolors = true
+  require("bufferline").setup({})
+
+  use {'907th/vim-auto-save'}
+  vim.g.auto_save = 1
 end
