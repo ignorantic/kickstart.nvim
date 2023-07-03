@@ -17,9 +17,36 @@ return {
             },
             renderer = {
                 group_empty = true,
+                highlight_git = true,
+                icons = {
+                    glyphs = {
+                        default = "",
+                        symlink = "",
+                        bookmark = "󰃁",
+                        folder = {
+                            arrow_open = "",
+                            arrow_closed = "",
+                            default = "",
+                            open = "",
+                            empty = "",
+                            empty_open = "",
+                            symlink = "",
+                            symlink_open = "",
+                        },
+                        git = {
+                            unstaged = "",
+                            staged = "S",
+                            unmerged = "",
+                            renamed = "➜",
+                            untracked = "U",
+                            deleted = "",
+                            ignored = "◌",
+                        },
+                    },
+                },
             },
             filters = {
-                dotfiles = true,
+                dotfiles = false,
             },
         })
     end,
