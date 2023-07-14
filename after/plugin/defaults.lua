@@ -13,3 +13,8 @@ vim.keymap.set('n', 'gI', vim.lsp.buf.implementation, { desc = 'Go to implementa
 
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>', { desc = 'Find files' })
 vim.keymap.set('n', '<leader>fg', ':Telescope live_grep<CR>', { desc = 'Live grep' })
+
+vim.keymap.set('n', '<leader>d', 'viwd', { desc = 'Delete word under cursor' })
+vim.keymap.set('n', '<leader>s', 'viws', { desc = 'Delete word under cursor' })
+vim.keymap.set('n', '<leader>y', 'yiw', { desc = 'Yank word under cursor' })
+vim.keymap.set('n', '<leader>p', 'viw"0p', { desc = 'Replace word under cursor' })
